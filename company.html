@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+ 
+
+  <title>DreamCO Stock Exchange</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,2300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Charts -->
+    <script type="text/javascript" src="data2.json"></script>
+ 
+<script src="assets/js/sort.js"></script>
+  
+<style> 
+
+.btn {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.yes {
+  background-color: #4CAF50;
+  }
+
+.yes:hover 
+{background-color: #46a049;
+}
+
+
+input[type=text] {background-color: white;
+ 
+}
+
+
+</style>
+
+ 
+
+
+</head>
+
+<body onload = displayTime();>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.php"><span style="color: #0290ad">DreamCO</span> Stock Exchange</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+<ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="company.html">Companies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="details.html">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+             
+          </li>
+          <form action="search_result.php">
+            <input type="text" placeholder="Search.." name="search"onkeyup="searchFun()">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+<header class="masthead" style="background-image: url('img/four.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Dream With Us</h1>
+            <span class="subheading">Invest for a Better Future</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+	<div id="time">
+		<p id="demo" style="text-align: center;"></p>
+	</div>
+
+		<marquee direction="scroll"> 
+
+
+		AAMRANET <font style="color: green">+23.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ABB1STMF <font style="color: red">-33.91 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ABBANK <font style="color: green">+3.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ACFL<font style="color: green">+65.92 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ACI <font style="color: green">+90.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ETL  <font style="color: red">-14.12 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		EXIM1STMF <font style="color: red">-34.20 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		EXIMBANK <font style="color: green">+97.22 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		OLYMPIC <font style="color: green">+31.23 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ONEBANKLTD <font style="color: red">-32.67 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ORIONINFU <font style="color: red">-7.98 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  ORIONPHARM <font style="color: green">+56.25 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 RUPALIINS <font style="color: red">-16.67 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  HOMETEX <font style="color: green">+35.37 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  RECKITTBEN <font style="color: red">-11.78 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		  MONNOSTAF <font style="color: red">-43.81 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  LINDEBD<font style="color: green">+87.09 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  GLAXOSMITH<font style="color: red">-9.45 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  AARONG <font style="color: green">+23.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		MOLLASOLT <font style="color: red">-33.91 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		PREMIEREBANK <font style="color: green">+3.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		SQUAREPHARMA<font style="color: green">+65.92 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		PRANRFL <font style="color: green">+90.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		WALTONMOTORS<font style="color: red">-14.12 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		DANO<font style="color: red">-34.20 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		PUBALIBANK<font style="color: green">+97.22 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    DESHBANDHU <font style="color: green">+23.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    SALVOCHEM <font style="color: red">-33.91 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    SOUTHEASTB <font style="color: green">+3.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    METROSPIN<font style="color: green">+65.92 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    ICBSONALI1 <font style="color: green">+90.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    KEYACOSMET  <font style="color: red">0.64 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+	</marquee>
+  	<hr>
+    
+    <div class="row">
+      <h2><u> <i> Company Names and Trading Codes </i></u> </h2><br><br>
+      <br>
+      <form >
+  <input type="text"  name="search" id="search" placeholder="Search.." class="form-control" onkeyup="searchFun()">
+
+</form>
+
+    
+    	 <table id="my_table" class="table">
+		      <tr>
+		    <th onclick="sortTable('table', 0)">Trading Code</th>
+		      <th onclick="sortTable('table', 1)">Company Name</th>
+		        <th onclick="sortTable('table', 2)">LTP(Tk)</th>
+		      
+		  </tr>
+      </table>
+
+      <script type="text/javascript">
+  
+  const searchFun =() =>{
+    let filter = document.getElementById('search').value.toUpperCase();
+    let myTable= document.getElementById('my_table');
+    let tr= myTable.getElementsByTagName('tr');
+
+    for(var i=0; i<tr.length;i++){
+      let td=tr[i].getElementsByTagName('td')[0];
+      if(td){
+        let textvalue=td.textContent || td.innerHTML;
+        if (textvalue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display="";
+        }else{
+          tr[i].style.display="none";
+        }
+      }
+    }
+  }
+
+  </script>
+  
+    </div>
+
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+<footer>
+    <div class="container">
+        
+    <div class="row">
+        <div class="col-sm-12 col-md-3"><br>
+          <h4></h4>
+           <button class="btn yes" ><a href="post.html">Contact Us</a></button>
+           
+        </div>
+        
+        <div class="col-sm-12 col-md-6">
+          <br>
+           <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="http://www.twitter.com/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/rafsan.anan">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/RaFsanAnAn">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+           <p class="copyright" style="color: white;">Copyright &copy; S.M. Rafsan Anjum Anan</p>
+            
+        </div>
+
+        <div class="col-sm-12 col-md-3" id="footermenu">
+       <span><a href="index.html">Home</a></span> <br><br>
+        <span><a href="company.html">Companies</a></span> <br><br>
+         <span><a href="details.html">Details</a></span> <br><br>
+          <span><a href="about.html">About Us</a></span> <br>
+       
+        <h4></h4>    
+      
+        </div>
+    </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+<script type="text/javascript">
+   var local_data = c_info;
+    var row_data = '';
+    for (var i = 0; i < local_data.length; i++) {
+      var row_data = row_data +
+      '<tr>' + ' <td>' + local_data[i].tradingCode +'</td>'+
+      ' <td><a href= ' + local_data[i].companyLink +' target="_blank">' + local_data[i].name +'</a></td>'+
+        ' <td>' + local_data[i].LTP +'</td>'+
+        '</tr>';
+    }
+    var table_body_element = document.createElement('tbody');
+    table_body_element.innerHTML = row_data;
+    document.getElementById('my_table').appendChild(table_body_element);
+  </script>
+</body>
+
+</html>

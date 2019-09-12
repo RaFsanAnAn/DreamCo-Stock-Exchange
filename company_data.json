@@ -1,0 +1,52 @@
+var company_info = [{
+  "tradingCode" : "RECKITTBEN",
+  "name": "Reckitt Benckiser Ltd.",
+  "lastTradingPrice": 2953.8,
+  "change": "+140.6",
+  "yesterdaysClosingPrice": 2813.2,
+"companyLink": "company_details2.html"
+},{
+  "tradingCode" : "GLAXOSMITH",
+    "name": "GlaxoSmithKline(GSK) Bangladesh Ltd. ",
+  "lastTradingPrice": 1849,
+  "change": "+76.3",
+  "yesterdaysClosingPrice": 1772.7,
+  "companyLink": "company_details2.html"
+},{
+  "tradingCode" :  "MARICO",
+    "name":"Marico Bangladesh Limited",
+  "lastTradingPrice": 1840.5,
+  "change": "+39.5",
+  "yesterdaysClosingPrice": 1801,
+"companyLink": "company_details2.html"
+},
+{
+  "tradingCode" :  "GP",
+    "name":"Grameenphone Ltd",
+  "lastTradingPrice": 306.8,
+  "change": "+7.6",
+  "yesterdaysClosingPrice": 1801,
+   "companyLink": "company_details.html"
+},
+{
+  "tradingCode" : "BERGERPBL",
+    "name": "Berger Paints Bangladesh Ltd." ,
+  "lastTradingPrice":1563.5,
+  "change": "+3.40",
+  "yesterdaysClosingPrice": 299.2,
+  "companyLink": "company_details2.html"
+},{
+  "tradingCode" : "RENWICKJA",
+    "name": "Renwick Jajneswar & Co (Bd) Ltd.",
+  "lastTradingPrice": 1548.1,
+  "change": "+47.1",
+  "yesterdaysClosingPrice": 1595.2,
+  "companyLink": "company_details2.html"
+},{
+  "tradingCode" : "MONNOSTAF",
+    "name":"Monno Jute Stafflers Ltd.",
+  "lastTradingPrice":1503.1,
+  "change": "+28.5",
+  "yesterdaysClosingPrice": 1474.6,
+   "companyLink": "company_details2.html"
+}]
